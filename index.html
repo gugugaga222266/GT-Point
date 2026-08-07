@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTポイント</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🪙 GTポイント</h1>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>現在のポイント</h2>
+    <div id="points">0 GT</div>
+
+    <h3>レベル <span id="level">1</span></h3>
+
+    <progress id="xpBar" value="0" max="100"></progress>
+
+    <p id="nextLevel">次のレベルまで100GT</p>
+  </div>
+
+  <div class="card">
+    <h2>今日の学習</h2>
+
+    <button onclick="addPoint(20,'英語ワーク')">
+      📖 英語ワーク +20GT
+    </button>
+
+    <button onclick="addPoint(20,'数学ワーク')">
+      🧮 数学ワーク +20GT
+    </button>
+
+    <button onclick="addPoint(10,'漢字練習')">
+      🈶 漢字練習 +10GT
+    </button>
+
+    <button onclick="addPoint(30,'宿題')">
+      🏠 宿題 +30GT
+    </button>
+
+    <button onclick="addPoint(50,'読書30分')">
+      📚 読書30分 +50GT
+    </button>
+
+  </div>
+
+  <div class="card">
+    <h2>🎁 ごほうびショップ</h2>
+
+    <button onclick="buyReward(100,'お菓子')">
+      🍫 お菓子（100GT）
+    </button>
+
+    <button onclick="buyReward(300,'ゲーム30分')">
+      🎮 ゲーム30分（300GT）
+    </button>
+
+    <button onclick="buyReward(500,'好きなジュース')">
+      🥤 好きなジュース（500GT）
+    </button>
+
+  </div>
+
+  <div class="card">
+    <h2>📈 履歴</h2>
+
+    <ul id="history"></ul>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
